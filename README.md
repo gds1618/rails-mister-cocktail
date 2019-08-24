@@ -22,3 +22,14 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+carousel 3 offers, big image
+change messages for “About Us”
+when click logo go to homepage
+when click picture to do show
+
+footer to the end
+types gems at description
+delete ingredients, select many ingredients to delete
+new drink strong, bigger text
+
+sort ingredients list, maybe select2

@@ -1,0 +1,29 @@
+<div class="navbar navbar-expand-sm navbar-light navbar-lewagon sticky-top">
+  <%= link_to cocktails_path, class: "navbar-brand" do %>
+    <%= image_tag "https://scontent.fcgh14-1.fna.fbcdn.net/v/t1.0-0/p552x414/11800229_801422649977446_6179798616266506348_n.png?_nc_cat=103&_nc_oc=AQmHlJvCpCn8LVunNaSnKBO0HNb2sPbpivlPzIf7cGrR97LnxX_xzZ3Ir9xPzXKqCSM&_nc_ht=scontent.fcgh14-1.fna&oh=3a916c35fb64ff889858f0bc5822e08d&oe=5DCBB199", class:"shadow-sm" %>
+    <% end %>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <%= link_to "Home", cocktails_path, class: "nav-link" %>
+
+      </li>
+      <li class="nav-item">
+        <%= link_to "About", "#", class: "nav-link" %>
+      </li>
+      <li class="nav-item dropdown">
+
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+          <%= link_to "Action", "#", class: "dropdown-item" %>
+          <%= link_to "Another action", "#", class: "dropdown-item" %>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
