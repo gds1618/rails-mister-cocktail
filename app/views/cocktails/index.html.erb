@@ -17,8 +17,11 @@
   <h1 class="my-3">Show your drinks</h1>
   <div class="row">
     <% @cocktails.each do |i| %>
-      <div class="col-xs-12 col-sm-4 my-2"><%= link_to i.name, cocktail_path(i) %>
-        <%= image_tag "https://source.unsplash.com/360x240/?drinks,#{i.name}", id:"img-drinks", class:"my-2 img-fluid shadow-sm" %>
+      <div class="col-xs-12 col-sm-4 my-2">
+        <%= link_to cocktail_path(i) do %>
+          <%= i.name %>
+          <%= image_tag "https://source.unsplash.com/360x240/?drinks,#{i.name}", id:"img-drinks", class:"my-2 img-fluid shadow-sm" %>
+        <% end %>
       </div>
     <% end %>
   </div>
